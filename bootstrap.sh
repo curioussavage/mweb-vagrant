@@ -12,6 +12,7 @@ source /home/vagrant/.profile
 sudo add-apt-repository ppa:chris-lea/node.js -y
 sudo apt-get update -y
 sudo apt-get install nodejs -y
+sudo apt-get install git
 
 npm install -g n
 n v4.2.1

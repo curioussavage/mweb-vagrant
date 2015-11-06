@@ -9,4 +9,4 @@ echo NPM_CONFIG_PREFIX=/home/vagrant/npm-global >> ~/.profile
 source ~/.profile
 
 npm install -g n
-n use v4.2.1
+n v4.2.1

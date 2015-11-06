@@ -5,7 +5,7 @@ sudo apt-get update -y
 sudo apt-get install nodejs -y
 
 mkdir /home/vagrant/npm-global
-echo NPM_CONFIG_PREFIX=/home/vagrant/npm-global >> /home/vagrant/.profile
+echo "export NPM_CONFIG_PREFIX=/home/vagrant/npm-global" >> /home/vagrant/.profile
 source /home/vagrant/.profile
 
 npm install -g n

@@ -4,9 +4,9 @@ sudo add-apt-repository ppa:chris-lea/node.js -y
 sudo apt-get update -y
 sudo apt-get install nodejs -y
 
-sudo chown -R vagrant /usr/lib/node_modules/
-sudo chown -R vagrant /usr/bin
-sudo chown -R vagrant /usr/share
+mkdir /home/vagrant/npm-global
+echo NPM_CONFIG_PREFIX=/home/vagrant/npm-global >> ~/.profile
+source ~/.profile
 
 npm install -g n
 n use v4.2.1
